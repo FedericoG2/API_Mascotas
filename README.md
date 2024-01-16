@@ -1,10 +1,15 @@
 
-# API Mascotas
+ # API Mascotas
+ 
+## Stack
 
 
+![Java Logo](https://img.icons8.com/?size=48&id=13679&format=png)
 
 
-![Logo](https://media.licdn.com/dms/image/C5612AQEzIUKfbUUNWw/article-cover_image-shrink_600_2000/0/1640701919659?e=2147483647&v=beta&t=_GgQWOSDG_nklkJef1XqFVHk68CKCsKIBohmCzkJk-Q)
+![Spring Logo](https://img.icons8.com/?size=48&id=90519&format=png)
+
+![My SQL Logo](https://img.icons8.com/?size=48&id=qGUfLiYi1bRN&format=png)
 
 
 ## Modelado
@@ -108,6 +113,10 @@ En donde una persona puede tener varias mascotas y varias mascotas pueden perten
 | Descripcion              | Requerido                      |
 | :--------------------- | :----------------------------- |
 | Se edita un registro ya creado | **Objeto por Body**        |
+
+
+
+
 
 
 
