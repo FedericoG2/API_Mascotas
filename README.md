@@ -79,7 +79,7 @@ En donde una persona puede tener varias mascotas y varias mascotas pueden perten
   GET localhost:8080/mascotas/traer
 ```
 
-#### Crear una persona
+#### Crear una mascota
 
 ```http
   POST localhost:8080/mascota/crear
@@ -89,7 +89,7 @@ En donde una persona puede tener varias mascotas y varias mascotas pueden perten
 | :--------------------- | :----------------------------- |
 | Se requiere un objeto para crear un registro | **Objeto por Body**        |
 
-#### Eliminar una persona
+#### Eliminar una mascota
 
 ```http
   DELETE localhost:8080/mascota/eliminar/{id}
@@ -100,7 +100,7 @@ En donde una persona puede tener varias mascotas y varias mascotas pueden perten
 | Se requiere un id para eliminar un registro | **Id de tipo Long**        |
 
 
-#### Actualizar una persona
+#### Actualizar una mascota
 
 ```http
   PUT  localhost:8080/mascota/editar/
