@@ -19,14 +19,14 @@
 * Persona
 * Mascota
 
-Persona
+### Persona
 * Long id
 * String nombre
 * String apellido
 * int edad
 * List<Mascota> listaMascotas
   
-Mascota
+### Mascota
 * Long id
 * String nombre
 * String especie
