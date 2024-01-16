@@ -13,6 +13,22 @@
 
 * Persona
 * Mascota
+
+Persona
+* Long id
+* String nombre
+* String apellido
+* int edad
+* List<Mascota> listaMascotas
+  
+Mascita
+* Long id
+* String nombre
+* String especie
+* String raza
+* String color
+
+
 ### Relacion
 #### OneToMany
 En donde una persona puede tener varias mascotas y varias mascotas pueden pertenecer a una persona.
