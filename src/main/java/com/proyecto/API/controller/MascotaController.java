@@ -1,7 +1,6 @@
 package com.proyecto.API.controller;
 
 import com.proyecto.API.model.Mascota;
-import com.proyecto.API.model.Persona;
 import com.proyecto.API.service.IMascotaService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -19,24 +18,22 @@ public class MascotaController {
 
      }
      @PostMapping("mascota/crear")
-     public String saveMascota(@RequestBody Mascota masc){
-         mascoService.saveMascota(masc);
+     public String saveMascota(@RequestBody Mascota mascota){
+         mascoService.saveMascota(mascota);
          return "Mascota creada con exito";
      }
 
-     @DeleteMapping("mascotas/eliminar/{id}")
-    public  String deleteMascotas(@PathVariable Long id){
+     @DeleteMapping("mascota/eliminar/{id}")
+    public  String deleteMascota(@PathVariable Long id){
          mascoService.deleteMascota(id);
          return "Mascota eliminada con exito";
 
      }
 
-     @PutMapping("/mascotas/editar/{id}")
-    public Mascota editMascota(@PathVariable Long id,@RequestParam(required = false,name = "nombre") String newName, @RequestParam(required = false,name = "especie") String newSpecies, @RequestParam(required = false,name = "raza") String newRace,@RequestParam(required = false,name = "color") String newColor){
-       mascoService.editMascota(id, newName, newSpecies, newRace, newColor);
-       Mascota m = mascoService.findMascota(id);
-
-       return  m;
-     }
+    @PutMapping("/mascota/editar")
+    public Mascota editMascota(@RequestBody Mascota mascota) {
+         mascoService.editMascota(mascota);
+         return mascoService.findMascota(mascota.getId_mascota());
+    }
 
 }

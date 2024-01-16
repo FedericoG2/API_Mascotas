@@ -38,8 +38,8 @@ public class PersonaService implements IPersonaService {
 
 
     @Override
-    public void edit(Persona perso) {
-        this.savePersona(perso);
+    public void edit(Persona persona) {
+        this.savePersona(persona);
     }
 
 

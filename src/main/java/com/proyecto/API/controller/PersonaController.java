@@ -20,24 +20,24 @@ public class PersonaController {
 
 
 
-    @PostMapping("personas/crear")
-    public String savePersona(@RequestBody Persona perso){
-        persoService.savePersona(perso);
+    @PostMapping("persona/crear")
+    public String savePersona(@RequestBody Persona persona){
+        persoService.savePersona(persona);
         return "Persona creada correctamente";
     }
 
-    @DeleteMapping("personas/eliminar/{id}")
+    @DeleteMapping("persona/eliminar/{id}")
     public String deletePersona(@PathVariable Long id) {
         persoService.deletePersona(id);
         return "Persona eliminada con exito";
     }
 
     @PutMapping("/persona/editar")
-    public Persona editPersona(@RequestBody Persona perso) {
+    public Persona editPersona(@RequestBody Persona persona) {
 
-        persoService.edit(perso);
+        persoService.edit(persona);
 
-        return persoService.findPersona(perso.getId());
+        return persoService.findPersona(persona.getId());
     }
 
 }

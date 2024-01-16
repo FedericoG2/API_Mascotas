@@ -1,6 +1,7 @@
 package com.proyecto.API.service;
 
 import com.proyecto.API.model.Mascota;
+import com.proyecto.API.model.Persona;
 
 
 import java.util.List;
@@ -17,7 +18,8 @@ public interface IMascotaService {
 
     public  void  deleteMascota(Long id);
 
-    public  void  editMascota(Long id , String newName, String newSpecies,String newRace,String newColor);
+
+    public  void editMascota(Mascota mascota);
 }
 
 
