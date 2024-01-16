@@ -103,7 +103,7 @@ En donde una persona puede tener varias mascotas y varias mascotas pueden perten
 #### Actualizar una mascota
 
 ```http
-  PUT  localhost:8080/mascota/editar/
+  PUT  localhost:8080/mascota/editar
 ```
 | Descripcion              | Requerido                      |
 | :--------------------- | :----------------------------- |
