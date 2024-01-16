@@ -45,7 +45,7 @@ En donde una persona puede tener varias mascotas y varias mascotas pueden perten
 #### Crear una persona
 
 ```http
-  POST localhost:8080/personas/crear
+  POST localhost:8080/persona/crear
 ```
 
 | Descripcion              | Requerido                      |
@@ -55,7 +55,7 @@ En donde una persona puede tener varias mascotas y varias mascotas pueden perten
 #### Eliminar una persona
 
 ```http
-  DELETE localhost:8080/personas/eliminar/{id}
+  DELETE localhost:8080/persona/eliminar/{id}
 ```
 
 | Descripcion              | Requerido                      |
@@ -66,7 +66,7 @@ En donde una persona puede tener varias mascotas y varias mascotas pueden perten
 #### Actualizar una persona
 
 ```http
-  PUT  localhost:8080/personas/editar/
+  PUT  localhost:8080/persona/editar
 ```
 | Descripcion              | Requerido                      |
 | :--------------------- | :----------------------------- |
@@ -92,7 +92,7 @@ En donde una persona puede tener varias mascotas y varias mascotas pueden perten
 #### Eliminar una persona
 
 ```http
-  DELETE localhost:8080/mascotas/eliminar/{id}
+  DELETE localhost:8080/mascota/eliminar/{id}
 ```
 
 | Descripcion              | Requerido                      |
