@@ -23,9 +23,9 @@ public class MascotaService implements IMascotaService{
     }
 
     @Override
-    public void saveMascota(Mascota masco) {
+    public void saveMascota(Mascota mascota) {
 
-        mascoRepository.save(masco);
+        mascoRepository.save(mascota);
 
     }
 

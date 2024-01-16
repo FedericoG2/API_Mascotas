@@ -11,11 +11,11 @@ public class Mascota {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id_mascota;
-    private String name;
+    private String nombre;
 
-    private String species;
+    private String especie;
 
-    private String race;
+    private String raza;
 
     private String color;
 
@@ -23,12 +23,11 @@ public class Mascota {
     public Mascota() {
     }
 
-    public Mascota(Long id_mascota, String name, String species, String race, String color, Mascota unaMascota) {
+    public Mascota(Long id_mascota, String nombre, String especie, String raza, String color) {
         this.id_mascota = id_mascota;
-        this.name = name;
-        this.species = species;
-        this.race = race;
+        this.nombre = nombre;
+        this.especie = especie;
+        this.raza = raza;
         this.color = color;
-
     }
 }

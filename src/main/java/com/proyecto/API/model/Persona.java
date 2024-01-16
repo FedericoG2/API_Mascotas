@@ -13,9 +13,9 @@ public class Persona {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     private Long id;
-    private String name;
-    private String lastname;
-    private int age;
+    private String nombre;
+    private String apellido;
+    private int edad;
 
 /**
  * Reelacion una persona tiene muchas mascotas y muchas mascotas pueden tener el mismo dueño.
@@ -26,11 +26,11 @@ public class Persona {
     public Persona() {
     }
 
-    public Persona(Long id, String name, String lastname, int age, List<Mascota> listaMascotas) {
+    public Persona(Long id, String nombre, String apellido, int edad, List<Mascota> listaMascotas) {
         this.id = id;
-        this.name = name;
-        this.lastname = lastname;
-        this.age = age;
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
         this.listaMascotas = listaMascotas;
     }
 }

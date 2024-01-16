@@ -13,7 +13,7 @@ public interface IMascotaService {
     public  Mascota findMascota(Long id);
 
 
-    public void saveMascota(Mascota masco);
+    public void saveMascota(Mascota mascota);
 
 
     public  void  deleteMascota(Long id);

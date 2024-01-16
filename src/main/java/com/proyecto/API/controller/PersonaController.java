@@ -3,6 +3,8 @@ package com.proyecto.API.controller;
 import com.proyecto.API.model.Persona;
 import com.proyecto.API.service.IPersonaService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -14,30 +16,30 @@ public class PersonaController {
     private IPersonaService persoService;
 
     @GetMapping("/personas/traer")
-    public List<Persona> getPersonas(){
-        return persoService.getPersona();
+    public ResponseEntity<List<Persona>> getPersonas(){
+        List<Persona> personas = persoService.getPersona();
+        return new ResponseEntity<>(personas, HttpStatus.OK);
     }
 
 
 
-    @PostMapping("persona/crear")
-    public String savePersona(@RequestBody Persona persona){
+    @PostMapping("/persona/crear")
+    public ResponseEntity<String> savePersona(@RequestBody Persona persona) {
         persoService.savePersona(persona);
-        return "Persona creada correctamente";
+        return new ResponseEntity<>("Persona creada correctamente", HttpStatus.CREATED);
     }
 
-    @DeleteMapping("persona/eliminar/{id}")
-    public String deletePersona(@PathVariable Long id) {
+    @DeleteMapping("/persona/eliminar/{id}")
+    public ResponseEntity<String> deletePersona(@PathVariable Long id) {
         persoService.deletePersona(id);
-        return "Persona eliminada con exito";
+        return new ResponseEntity<>("Persona eliminada con éxito", HttpStatus.OK);
     }
 
     @PutMapping("/persona/editar")
-    public Persona editPersona(@RequestBody Persona persona) {
-
+    public ResponseEntity<Persona> editPersona(@RequestBody Persona persona) {
         persoService.edit(persona);
-
-        return persoService.findPersona(persona.getId());
+        Persona personaEditada = persoService.findPersona(persona.getId());
+        return new ResponseEntity<>(personaEditada, HttpStatus.OK);
     }
 
 }
