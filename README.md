@@ -21,7 +21,7 @@ Persona
 * int edad
 * List<Mascota> listaMascotas
   
-Mascita
+Mascota
 * Long id
 * String nombre
 * String especie
