@@ -7,7 +7,7 @@
 ![Java Logo](https://img.icons8.com/?size=48&id=13679&format=png)
 
 
-![Spring Logo](https://img.icons8.com/?size=48&id=90519&format=png)
+![Spring Logo](https://img.icons8.com/?size=40&id=2oBx9FpXcbLa&format=png)
 
 ![My SQL Logo](https://img.icons8.com/?size=48&id=qGUfLiYi1bRN&format=png)
 
