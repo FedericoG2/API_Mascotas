@@ -17,9 +17,6 @@ public class Persona {
     private String apellido;
     private int edad;
 
-/**
- * Reelacion una persona tiene muchas mascotas y muchas mascotas pueden tener el mismo dueño.
- */
 @OneToMany
     private List<Mascota> listaMascotas;
 

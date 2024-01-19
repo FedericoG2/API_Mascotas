@@ -3,9 +3,10 @@ package com.proyecto.API.service;
 import com.proyecto.API.model.Mascota;
 import com.proyecto.API.repository.IMascotaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.List;
-
+@Service
 public class MascotaService implements IMascotaService{
 
     @Autowired
